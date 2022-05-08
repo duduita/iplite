@@ -47,6 +47,12 @@ Then, on Linux do this to set up the tap network interface and route that will l
 sudo ./tools/simhostroute.sh enp0s3 on
 ```
 If you use ifconfig, you'll se that enp0se is the wireless interface. Note that it has an IP address on the local net. There may be other interfaces listed, you’ll need to pick the one that’s right for your system.
+
+## Run the Netcat
+```
+netcat -l -p 31337
+```
+
 ## Debugging with GDB
 Initiate a nuttx process:
 ```
